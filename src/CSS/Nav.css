@@ -1,0 +1,40 @@
+.navbar {
+    padding-left: 2rem;
+    background-color: rgba(0, 0, 0, 0.752);
+    position: sticky;
+}
+
+.navbar-brand {
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+  color: #fff !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-left: 3.25rem;
+}
+
+
+/* Desktop only */
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12rem; /* this is your "not center" sweet spot */
+  }
+    .navbar-nav {
+    margin-left: 20rem;
+  }
+   .navbar-brand {
+    margin-left: 10rem;   /* move logo */
+  }
+}
+
+/* Mobile reset */
+@media (max-width: 991px) {
+  .nav-desktop {
+    padding-left: 0;
+  }
+}

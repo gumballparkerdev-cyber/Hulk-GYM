@@ -1,0 +1,107 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem;
+    margin-left: 10vh;
+    margin-top: 20px;
+}
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card {
+  opacity: 1;
+  transform: translateX(-100px); /* start off-screen left */
+  transition: all 0.8s ease-out;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateX(0); /* slide into place */
+}
+.noob {
+    max-width: 18rem;              /* limits width */
+  margin-left: auto;             /* centers horizontally */
+  margin-right: auto;
+  border: 3px solid #00ff62;     /* blue border */
+  border-radius: 10px;  
+  padding: 1rem;
+}
+.noob h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.noob ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+.noob li {
+    margin-bottom: 0.75rem; /* increased spacing */
+  line-height: 1.6;        /* better vertical rhythm */
+  font-size: 1.05rem;  
+}
+.card-flex {
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;               /* adds spacing between cards */
+  padding: 1rem 2rem;      /* replaces margin-left/right */
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.buy {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.member {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer {
+display: flex;
+justify-content: space-evenly;
+font-size: 14px;
+padding: 2rem;
+background-color: rgba(0, 0, 0, 0.752);
+margin-top: 100px;
+}
+
+.gyminfo {
+    max-width: 20vh;
+    font-size: 14px;
+}
+.footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.wrap {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.right {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 20;
+}

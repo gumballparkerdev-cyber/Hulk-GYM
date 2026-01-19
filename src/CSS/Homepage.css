@@ -1,0 +1,330 @@
+* {
+    background-color: #000000;
+    color: #ffffff;
+}
+.container {
+  position: relative; /* for positioning child elements */
+}
+.homepage-image {
+  max-width: 100%;   /* never exceed parent width */
+  height: 48%;      /* keeps aspect ratio */
+  display: block;    /* removes inline spacing issues */
+  z-index: -1;      /* behind other elements */
+}
+
+
+.apply {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: #249200;
+    color: white;
+    z-index: 1; /* in front of the image */
+    position: absolute;
+    top: 36vh; /* adjust as needed */
+    left: 10vh;
+    box-shadow: 0 4px 6px rgba(184, 184, 184, 0.507);
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.reason {
+    position: absolute;
+    top: 75vh; /* adjust as needed */
+    left: 10vh;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1; /* in front of the image */
+}
+.member {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about {
+    max-width: fit-content;
+    z-index: 1;
+    position: relative;
+    text-align:left;
+    top: 75px;
+    left: 30vh;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-section {
+    display: flex;
+    max-width:fit-content;
+    margin: 1rem auto 3rem auto;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.para {
+    max-width: 35rem;
+    margin-right: 5rem;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem;
+    margin-left: 10vh;
+    margin-top: 20px;
+}
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card {
+  opacity: 0;
+  transform: translateX(-100px); /* start off-screen left */
+  transition: all 0.8s ease-out;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateX(0); /* slide into place */
+}
+.noob {
+    max-width: 18rem;              /* limits width */
+  margin-left: auto;             /* centers horizontally */
+  margin-right: auto;
+  border: 3px solid #00ff62;     /* blue border */
+  border-radius: 10px;  
+  padding: 1rem;
+}
+.noob h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.noob ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+.noob li {
+    margin-bottom: 0.75rem; /* increased spacing */
+  line-height: 1.6;        /* better vertical rhythm */
+  font-size: 1.05rem;  
+}
+.card-flex {
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;               /* adds spacing between cards */
+  padding: 1rem 2rem;      /* replaces margin-left/right */
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.buy {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  max-width: 800px;   /* fixed width */
+  max-height: 500px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.about-section {
+  display: flex;
+  align-items: center;   /* vertically align text + carousel */
+  justify-content: space-between;
+  gap: 2rem;             /* spacing between text and carousel */
+  max-width: 1300px;     /* keeps whole section balanced */
+}
+
+.about-section .carousel {
+  flex: 1;               /* allow it to share space */
+  max-width: 600px;      /* prevent it from overflowing */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10; /* ensures they sit above the images */
+}
+.footer {
+display: flex;
+justify-content: space-evenly;
+font-size: 14px;
+padding: 2rem;
+background-color: rgba(0, 0, 0, 0.752);
+margin-top: 100px;
+}
+
+.gyminfo {
+    max-width: 20vh;
+    font-size: 14px;
+}
+.footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.wrap {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.right {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 20;
+}
+.desktop-img { display: block; }
+.mobile-img { display: none; }
+
+@media (max-width: 480px) {
+  .desktop-img { display: none; }
+  .mobile-img { display: block; }
+  .apply {
+    margin:auto;
+    top: 12vh;
+    left: 60px;
+    width: fit-content;
+    font-size: 12px;
+      z-index: 1; /* in front of the image */
+    position: absolute;
+   /* adjust as needed */
+  }
+  .reason {
+    top: 20vh; /* adjust as needed */
+    left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .member {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .about {
+    position: relative;
+    top: 40px;
+    left: 0;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .about-section .carousel {
+    max-width: 100%;
+  }
+  .card-title {
+    margin-top: 3rem;
+  }
+  .para {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .card-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 1rem 0;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    margin-left: 0 !important;
+    margin: 0;
+    width: 80vw;
+    min-width: 80vw;
+    max-width: 80vw;
+    padding: 1rem;
+    flex-shrink: 0;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .noob {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+  .noob h5 {
+    font-size: 1.2rem;
+  }
+  .noob li {
+    font-size: 0.95rem;
+  }
+  
+  .carousel-inner {
+    max-width: 100%;
+    max-height: 300px;
+  }
+  .carousel-inner img {
+    height: 30vh;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .gyminfo {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer h5 {
+    font-size: 14px;
+  }
+  .right {
+    font-size: 12px;
+  }
+
+  .col-sm-6 {
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+}

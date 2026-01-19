@@ -1,0 +1,93 @@
+.about {
+    max-width: fit-content;
+    z-index: 1;
+    position: relative;
+    text-align:left;
+    top: 75px;
+    left: 30vh;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-section {
+    display: flex;
+    max-width:fit-content;
+    margin: 1rem auto 3rem auto;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.para {
+    max-width: 35rem;
+    margin-right: 5rem;
+    margin-top: 4rem ;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  max-width: 800px;   /* fixed width */
+  max-height: 500px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.about-section {
+  display: flex;
+  align-items: center;   /* vertically align text + carousel */
+  justify-content: space-between;
+  gap: 2rem;             /* spacing between text and carousel */
+  max-width: 1300px;     /* keeps whole section balanced */
+}
+
+.about-section .carousel {
+  flex: 1;               /* allow it to share space */
+  max-width: 600px;      /* prevent it from overflowing */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10; /* ensures they sit above the images */
+}
+
+.footer {
+display: flex;
+justify-content: space-evenly;
+font-size: 14px;
+padding: 2rem;
+background-color: rgba(0, 0, 0, 0.752);
+margin-top: 100px;
+}
+
+.gyminfo {
+    max-width: 20vh;
+    font-size: 14px;
+}
+.footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.wrap {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.right {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 20;
+}
